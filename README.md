@@ -1,5 +1,7 @@
 # Твиттер | X Илона Маска — Telegram-канал
-
+<p align="center">
+  <img src="elon-musk.png" alt="Илон Маск" width="700">
+</p>
 <p align="center">
   <a href="https://t.me/elon_musk_voice">
     <img src="https://img.shields.io/badge/Подписаться_в_Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Подписаться в Telegram">
