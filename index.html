@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Твиттер | X Илона Маска в Telegram — посты на русском</title>
+    <meta
+      name="description"
+      content="Telegram-канал с постами Илона Маска из X (Twitter) на русском: новые посты, ответы, реакции, заявления и важные обновления."
+    />
+    <meta
+      name="keywords"
+      content="Илон Маск, Elon Musk, X, Twitter, Telegram канал, посты Илона Маска, новости Tesla, новости SpaceX, Starlink, Neuralink"
+    />
+    <meta name="theme-color" content="#071018" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Твиттер | X Илона Маска в Telegram" />
+    <meta
+      property="og:description"
+      content="Все посты и активность Elon Musk в X (Twitter) на русском — в одном Telegram-канале."
+    />
+    <meta property="og:image" content="./elon-musk.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Russo+One&family=IBM+Plex+Sans:wght@400;500;700&display=swap"
+    />
+
+    <style>
+      :root {
+        --bg: #04070d;
+        --panel: rgba(8, 17, 30, 0.92);
+        --panel-soft: rgba(74, 175, 255, 0.09);
+        --text: #eaf2ff;
+        --muted: #b7c6df;
+        --line: rgba(91, 160, 240, 0.34);
+        --accent: #2fa4ff;
+        --accent-2: #74c8ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+        color: var(--text);
+        line-height: 1.6;
+        background:
+          radial-gradient(700px 500px at 10% -10%, rgba(47, 164, 255, 0.28), transparent 68%),
+          radial-gradient(500px 380px at 90% 0%, rgba(116, 200, 255, 0.2), transparent 70%),
+          linear-gradient(180deg, #03060b 0%, #07101a 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(94, 160, 235, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(94, 160, 235, 0.06) 1px, transparent 1px);
+        background-size: 26px 26px;
+        opacity: 0.35;
+      }
+
+      .container {
+        width: min(1040px, 92vw);
+        margin: 0 auto;
+        padding: 28px 0 64px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #d9e7fb;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 13px;
+        background: rgba(74, 175, 255, 0.12);
+      }
+
+      .hero {
+        background: linear-gradient(140deg, rgba(7, 17, 29, 0.98), rgba(6, 12, 21, 0.98));
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 30px;
+        box-shadow: 0 18px 42px rgba(0, 0, 0, 0.44);
+        text-align: center;
+      }
+
+      .hero img {
+        width: min(420px, 86vw);
+        border-radius: 18px;
+        border: 1px solid rgba(234, 242, 255, 0.16);
+      }
+
+      h1,
+      h2 {
+        font-family: "Russo One", "Segoe UI", sans-serif;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: clamp(30px, 5vw, 52px);
+        margin: 18px 0 10px;
+        letter-spacing: 0.01em;
+      }
+
+      .hero p {
+        margin: 0 auto 18px;
+        max-width: 760px;
+        color: #d4e2f6;
+        font-size: clamp(17px, 2.4vw, 23px);
+      }
+
+      .actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .btn {
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 12px;
+        padding: 12px 18px;
+        border: 1px solid transparent;
+        transition: transform 0.2s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        background: linear-gradient(180deg, var(--accent-2), var(--accent));
+        color: #061320;
+      }
+
+      .btn-ghost {
+        border-color: var(--line);
+        background: rgba(74, 175, 255, 0.1);
+        color: #e7f1ff;
+      }
+
+      .section {
+        margin-top: 20px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px;
+        background: var(--panel);
+      }
+
+      .section h2 {
+        margin: 0 0 12px;
+        font-size: clamp(22px, 3vw, 30px);
+      }
+
+      .section p {
+        margin: 0 0 10px;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 8px 0;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--panel-soft);
+        padding: 16px;
+      }
+
+      .card h3 {
+        margin: 0 0 6px;
+        font-size: 18px;
+      }
+
+      .card p {
+        margin: 0;
+      }
+
+      .channel-link {
+        font-weight: 700;
+        color: #d8ebff;
+      }
+
+      .channel-link a {
+        color: #8fd1ff;
+      }
+
+      .footer {
+        margin-top: 20px;
+        text-align: center;
+        color: rgba(215, 230, 250, 0.66);
+        font-size: 13px;
+      }
+
+      @media (max-width: 820px) {
+        .container {
+          width: min(1040px, 95vw);
+          padding-top: 16px;
+        }
+
+        .hero,
+        .section {
+          padding: 18px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <nav class="nav" aria-label="Навигация">
+        <a href="#about">О канале</a>
+        <a href="#content">Что публикуется</a>
+        <a href="#why">Почему удобно</a>
+        <a href="#join">Ссылка</a>
+      </nav>
+
+      <section class="hero" id="top">
+        <img src="./elon-musk.png" alt="Илон Маск" />
+        <h1>Твиттер | X Илона Маска в Telegram</h1>
+        <p>
+          Читайте все посты Илона Маска на русском прямо в Telegram: не нужно открывать X и переводить вручную.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://t.me/elon_musk_voice">Открыть канал в Telegram</a>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <h2>О канале</h2>
+        <p>
+          <strong>Твиттер | X Илона Маска</strong> — Telegram-канал, в котором собраны посты и активность Elon Musk в X
+          (Twitter): публикации, ответы, реакции, заявления и другие важные обновления.
+        </p>
+        <p>
+          Здесь удобно следить за тем, что пишет Илон Маск: свежие посты и ключевые новости собраны в одной ленте.
+        </p>
+      </section>
+
+      <section class="section" id="content">
+        <h2>Что публикуется в канале</h2>
+        <ul>
+          <li>Новые посты Илона Маска в X</li>
+          <li>Ответы, реакции и заявления</li>
+          <li>Важные обновления и заметная активность</li>
+          <li>Новости, связанные с Tesla, SpaceX, Starlink, Neuralink и другими проектами Маска</li>
+        </ul>
+      </section>
+
+      <section class="section" id="why">
+        <h2>Почему это удобно</h2>
+        <p>
+          Вместо того чтобы постоянно проверять X / Twitter, можно просто открыть Telegram и увидеть всё главное в
+          одной ленте.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <h3>Всё в одном месте</h3>
+            <p>Вся активность Илона Маска собрана в одном Telegram-канале.</p>
+          </article>
+          <article class="card">
+            <h3>Быстрый доступ</h3>
+            <p>Свежие публикации и обновления появляются без лишних действий.</p>
+          </article>
+          <article class="card">
+            <h3>Удобный формат</h3>
+            <p>Привычная лента Telegram вместо постоянного переключения между приложениями.</p>
+          </article>
+          <article class="card">
+            <h3>Ничего важного не потеряется</h3>
+            <p>Простой способ не пропускать заметные посты и новости.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="join">
+        <h2>Ссылка на канал</h2>
+        <p class="channel-link">Telegram: <a href="https://t.me/elon_musk_voice">https://t.me/elon_musk_voice</a></p>
+        <p>
+          Подписывайтесь на канал <strong>Твиттер | X Илона Маска</strong>, чтобы следить за постами, новостями и
+          активностью Elon Musk в удобном формате.
+        </p>
+      </section>
+
+      <p class="footer">Не аффилировано с Elon Musk, X (Twitter), Tesla, SpaceX, Starlink или Neuralink.</p>
+    </main>
+  </body>
+</html>
