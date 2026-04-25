@@ -1,7 +1,7 @@
 # Telegram Илона Маска — канал с постами Elon Musk из X / Twitter
 
 <p align="center">
-  <img src="elon-musk.png" alt="Илон Маск — Telegram-канал с постами и активностью в X" width="700">
+  <img src="elon-musk.png" alt="Илон Маск — Telegram-канал с постами и активностью в X" width="400">
 </p>
 
 
