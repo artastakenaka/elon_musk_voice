@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://artastakenaka.github.io/elon_musk_voice/sitemap.xml
